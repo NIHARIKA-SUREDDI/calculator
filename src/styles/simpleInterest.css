@@ -1,12 +1,12 @@
 .container {
     
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: grid;
     justify-content: center;
     align-items: center;
     align-content: center;
-    border: 1px solid;
+    
 }
 
 .container-form {
@@ -21,6 +21,9 @@
     padding-bottom: 3rem;
     
 }
+.container h1{
+    text-align:left;
+}
 
 
 .container-form span {
@@ -32,11 +35,12 @@
     width: 20%;
     display: flex;
     justify-content: flex-end;
-    background-color: #adfeea;
+    background-color: #66e3c4;
     height: 1.5rem;
-    border: none;
+    /* border: none; */
     color: #049974;
-    padding: .1rem .3rem;
+    padding: .1rem .8rem;
+   
 }
 
 .container-form-input input {
@@ -44,7 +48,7 @@
     border: none;
     outline: none;
     text-align: end;
-    background-color: #adfeea;
+    background-color: #66e3c4;
     color: #049974;
 
 
@@ -63,6 +67,6 @@
     justify-content: center;
     justify-content: space-between;
   }
-
+  
 
 
