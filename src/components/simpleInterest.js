@@ -39,7 +39,7 @@ function SimpleInterest() {
             <div style={{border:'1px solid',borderRadius:'.5rem',padding:'10px'}}>              
               <div className="container-form">  
                  <div class="circle">
-                  <span>
+                  <span className="interest-fields">
                       <p>Principal Amount</p>
                       
                       <div className="container-form-input">
@@ -71,7 +71,7 @@ function SimpleInterest() {
                           
                  </div>
                 <div class="title">
-                    <span>                       
+                    <span className="interest-fields">                       
                       <p>Rate of Interest(p.a)</p>
                      
                       <div className="container-form-input">
@@ -98,7 +98,7 @@ function SimpleInterest() {
                        />
                   </div>
                 <div class="box">
-                   <span>
+                   <span className="interest-fields">
                         <p>Timeperiod</p>                    
                        <div className="container-form-input">
                           <input 

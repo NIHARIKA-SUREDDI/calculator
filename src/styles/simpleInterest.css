@@ -67,6 +67,12 @@
     justify-content: center;
     justify-content: space-between;
   }
+  .interest-fields {
+    display: flex;
+    align-items: center;
+
+ }
+
   
 
 
