@@ -128,8 +128,8 @@ function SimpleInterest() {
            <div className="sample">
            
            <p><span>Principal amount </span><span>₹{principal.toLocaleString("en-In")}</span></p> 
-           <p><span>Total Interest </span><span>₹{Interest.toLocaleString("en-In")}</span></p> 
-           <p><span>Total amount </span><span>₹{totalAmount.toLocaleString("en-In")}</span></p>
+           <p><span>Total Interest </span><span>₹ {Math.round(Interest).toLocaleString("en-IN")}</span></p> 
+           <p><span>Total amount </span><span>₹ {Math.round(totalAmount).toLocaleString("en-IN")}</span></p>
 
            </div>
           
