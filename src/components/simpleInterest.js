@@ -24,7 +24,7 @@ function SimpleInterest() {
      ]
 
      const options = {
-      title: "Simple Interest Piechart",
+      
       is3D: true,
     };
     function handleprincipal(val){
@@ -34,13 +34,14 @@ function SimpleInterest() {
 
     return (
         <div className="container">
-            <h1>Simple Interest Calculator</h1>
+            {/* <h1>Simple Interest Calculator</h1> */}
+            
             <div style={{display:'flex'}}>
-            <div style={{border:'1px solid',borderRadius:'.5rem',padding:'10px'}}>              
+            <div style={{border:'1px solid lightgrey',borderRadius:'.5rem',padding:'10px'}}>              
               <div className="container-form">  
                  <div class="circle">
                   <span className="interest-fields">
-                      <p>Principal Amount</p>
+                      <p>Principal amount</p>
                       
                       <div className="container-form-input">
                       <span>₹</span>
@@ -48,11 +49,11 @@ function SimpleInterest() {
                        value={principal} 
                        onChange={(e) =>{
                         console.log(typeof e.target.value)
-                        if(e.target.value<1000||e.target.value>10000000){
+                      
+                        setPrincipal(Number(e.target.value))
+                          if(e.target.value<1000||e.target.value>10000000){
                           return;
                         }
-                        setPrincipal(Number(e.target.value))
-
                       }}
 
                       
@@ -72,16 +73,18 @@ function SimpleInterest() {
                  </div>
                 <div class="title">
                     <span className="interest-fields">                       
-                      <p>Rate of Interest(p.a)</p>
+                      <p>Rate of Interest (p.a)</p>
                      
                       <div className="container-form-input">
                       <input
                        value={Rateofinterest} 
                        onChange={(e) =>{
+                        setRateofinterest(e.target.value)
                         if(e.target.value<1||e.target.value>50){
                           return;
                         }
-                        setRateofinterest(e.target.value)}}
+                       
+                      }}
                        
                       />
                       <span>%</span>
@@ -99,15 +102,17 @@ function SimpleInterest() {
                   </div>
                 <div class="box">
                    <span className="interest-fields">
-                        <p>Timeperiod</p>                    
+                        <p>Time period</p>                    
                        <div className="container-form-input">
                           <input 
                            value={Timeperiod}
                            onChange={(e) =>{
+                            setTimeperiod(e.target.value)
                             if(e.target.value<1||e.target.value>30){
                               return;
                             }
-                             setTimeperiod(e.target.value)}}/>
+                             
+                             }}/>
                            <span>Yr</span>
                           </div>
                           </span>
@@ -153,6 +158,5 @@ function SimpleInterest() {
     );
 }
 
-export default SimpleInterest;
-
+ export default SimpleInterest;
 

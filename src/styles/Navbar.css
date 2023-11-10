@@ -1,0 +1,30 @@
+.my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F4F6;
+    padding: 1rem 2rem;
+    color: #40CCB3;
+  }
+  .nav-logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-button {
+    background-color: #fff;
+    border: 1px solid #40CCB3;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #40CCB3;
+    font-weight: 600;
+  }
+  .nav-button:hover {
+    background-color: #F0F8F6;
+  }
+  

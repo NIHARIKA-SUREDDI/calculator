@@ -1,14 +1,34 @@
 import './App.css';
-import { useState } from 'react';
-import SimpleInterest from './components/simpleInterest';
 
+import SimpleInterest from './components/simpleInterest';
+import Nav from './components/Navbar';
+import CompoundInterest from './components/CompoundInterest';
+import {Router,Routes, Route, useNavigate, Link } from 'react-router-dom';
+import HomePage from './components/home';
 function App() {
  
-  return (
-
+ 
+  return (                                                                                                                                                                        
+    
+  
     <div className="App">
-     <SimpleInterest/>
+
+      <Nav/>
+      
+     
+      <Routes>
+      <Route path='/' element={<HomePage />}/>
+      <Route path='/simple' element={<SimpleInterest />} />
+      <Route path='/compound' element={<CompoundInterest />} />
+      </Routes>
+
+    
+     
     </div>
+    
+
+    
+
   );
 }
 
