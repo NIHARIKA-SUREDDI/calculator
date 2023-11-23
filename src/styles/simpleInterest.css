@@ -21,9 +21,10 @@
     padding-bottom: 3rem;
     
 }
-/* .container h1{
-    text-align:left;
-} */
+.container h1{
+    /* text-align:left; */
+    justify-content: center;
+}
 
 
 .container-form span {

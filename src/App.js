@@ -8,27 +8,18 @@ import HomePage from './components/home';
 function App() {
  
  
-  return (                                                                                                                                                                        
-    
-  
+  return (                                                                                                                                                                       
     <div className="App">
 
       <Nav/>
       
      
-      <Routes>
+      <Routes className="route">
       <Route path='/' element={<HomePage />}/>
       <Route path='/simple' element={<SimpleInterest />} />
       <Route path='/compound' element={<CompoundInterest />} />
       </Routes>
-
-    
-     
     </div>
-    
-
-    
-
   );
 }
 
